@@ -1,0 +1,14 @@
+## Interface: 30300
+## Title: |cff1784d1ElvUI|r Multibot BotInspect
+## Notes: Integrated live/offline bot gear, inventory, spellbook, quests and managed-roster frontend for ElvUI Multibot Core.
+## Author: Kjetil / OpenAI
+## Version: 0.3.0-alpha2.2.8
+## RequiredDeps: ElvUI, ElvUI_Multibot_Core
+
+BotInspect.lua
+Spellbook.lua
+Quests.lua
+MasterLoot.lua
+MicroBar.lua
+Hotkeys.lua
+Options.lua

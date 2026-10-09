@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: |cff1784d1ElvUI|r Multibot CommandPanel
+## Notes: Dynamic tactical raid command workflows for ElvUI_Multibot_Core.
+## Version: 0.1.0-alpha10.6
+## RequiredDeps: ElvUI, ElvUI_Multibot_Core
+
+CommandPanel.lua
+Options.lua

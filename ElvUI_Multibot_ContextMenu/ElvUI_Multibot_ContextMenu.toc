@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: |cff1784d1ElvUI|r Multibot ContextMenu
+## Notes: Shift-right-click Multibot context frontend with customizable presentation and Core-backed controls.
+## Version: 0.1.0-alpha22.1
+## RequiredDeps: ElvUI, ElvUI_Multibot_Core
+
+ContextMenu.lua
+Options.lua

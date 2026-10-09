@@ -1,0 +1,30 @@
+ElvUI_Multibot_BotInspect 0.3.0-alpha2.2.8 — LOCAL VALIDATION (not yet live-client validated)
+Target: WoW 3.3.5a / ElvUI 6.09 / Multibot Core 1.6.4.2+
+
+HOTKEY
+- Profile defaults: hotkeyEnabled=true, hotkey=SHIFT-C.
+- ElvUI options use AceConfig keybinding + toggle controls; settings remain profile-backed.
+- Runtime uses SetOverrideBindingClick/ClearOverrideBindings, so saved WoW account/character bindings are not rewritten.
+- Override is exact-key only: default Shift+C takes precedence while ordinary C remains untouched.
+- Binding changes are blocked from restricted API calls during combat and deferred to PLAYER_REGEN_ENABLED.
+- Executable mock validated initial Shift+C, custom rebind, disable/re-enable, button Toggle dispatch and combat deferral.
+
+
+QUEST PRESENTATION
+- Display-name resolution is presentation-only; Core quest IDs, exact links, status and abandon transactions remain authoritative and unchanged.
+- Matching player-log quest IDs use the native localized title, avoiding bridge replacement-character artifacts.
+- Exact Playerbots hyperlink/optional Questie names are considered only when they are measurably cleaner than the current name; no blanket '?' removal is performed because legitimate quest titles can contain question marks.
+
+CATEGORY GROUPING
+- Reads the player's native GetQuestLogTitle headers and maps matching quest IDs to those same categories.
+- Supports the WotLK 3.3.5 GetQuestLogTitle return layout and a later-Classic compatible layout guard.
+- Observed mappings remain in a session cache so player turn-in does not immediately orphan the bot's category.
+- Optional Questie zoneOrSort fallback is protected by pcall and creates no hard dependency.
+- Unknown bot-only quests are explicitly grouped as Other / Unknown.
+- Header rows are collapsible and never expose the Abandon control.
+
+REGRESSION BOUNDARY
+- Core 1.6.4.2 is unchanged.
+- Quest refresh, quest metadata, abandon, Accept Nearby and Talk / Turn In flows are unchanged.
+- ContextMenu registrations are unchanged.
+- Summon Presets, Gear/Inventory, Spellbook, Master Loot and Micro Bar are unchanged.

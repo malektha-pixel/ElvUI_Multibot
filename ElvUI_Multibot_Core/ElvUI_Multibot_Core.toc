@@ -1,0 +1,39 @@
+## Interface: 30300
+## Title: |cff1784d1ElvUI|r Multibot Core
+## Notes: Shared backend and mod-multibot-bridge communicator for ElvUI Multibot modules.
+## Author: Kjetil / OpenAI
+## Version: 1.6.4.2
+## RequiredDeps: ElvUI
+## SavedVariables: ElvUI_Multibot_CoreDB, ElvUI_Multibot_SnapshotsDB, ElvUI_Multibot_ManagedDB, ElvUI_Multibot_GroupsDB, ElvUI_Multibot_LastKnownDB
+
+Bootstrap.lua
+Core\Util.lua
+Core\Events.lua
+Core\Modules.lua
+Registry\DataDomains.lua
+Registry\Actions.lua
+State\Store.lua
+Core\BotRegistry.lua
+Core\Selection.lua
+Bridge\Transport.lua
+Services\DataBroker.lua
+Services\ManagedRoster.lua
+Services\LastKnown.lua
+Services\ManagedGroups.lua
+Bridge\Protocol.lua
+Transports\Chat.lua
+Services\Lifecycle.lua
+Services\Snapshots.lua
+Services\Actions.lua
+Services\Tactical.lua
+Services\Inventory.lua
+Services\Equipment.lua
+Services\TalentInspect.lua
+Services\Spells.lua
+Services\ItemVerification.lua
+Services\Quests.lua
+Services\Talents.lua
+Core\API.lua
+Diagnostics\Diagnostics.lua
+Options\Options.lua
+Core\Core.lua

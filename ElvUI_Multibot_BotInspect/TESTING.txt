@@ -1,0 +1,27 @@
+ElvUI_Multibot_BotInspect 0.3.0-alpha2.2.8 — LIVE HOTKEY + QUEST REGRESSION TESTS
+Target: WoW 3.3.5a / ElvUI 6.09 / Core 1.6.4.2+
+
+HOTKEY
+1. With the default profile, press C. Expected: normal Character panel only.
+2. Press Shift+C. Expected: BotInspect toggles and the Character panel does not open from that keypress.
+3. ElvUI -> Multibot BotInspect -> Appearance: disable Enable BotInspect shortcut. Press Shift+C. Expected: BotInspect no longer intercepts it; normal WoW binding behavior is restored.
+4. Re-enable and change BotInspect shortcut to another combination, e.g. Alt+B. Expected: Alt+B toggles BotInspect and Shift+C is released.
+5. Switch ElvUI profiles with different shortcut settings. Expected: each profile's enabled/key value is applied.
+6. If practical, change the setting during combat. Expected: no Lua/protected-action error; the new binding becomes active after combat ends.
+
+QUEST / REGRESSION
+1. Open the player's normal quest log and BotInspect -> Quests for a leveling bot carrying several of the same quests.
+   Expected: BotInspect shows the same zone/category headers as the player's native quest log for those shared quest IDs.
+2. Verify the previously dirty names containing replacement '?' characters.
+   Expected: shared quests use the player's clean native localized title. Exact-link/Questie metadata may also clean bot-only titles when available.
+3. Verify a legitimate quest title that truly ends in '?', if available.
+   Expected: the punctuation is not blindly stripped.
+4. Click a category header.
+   Expected: its quest rows collapse; click again to expand. Abandon never appears on header rows.
+5. Turn in a shared quest on the player while the bot still has it, then refresh BotInspect during the same session.
+   Expected: the observed category remains cached for the bot quest.
+6. If the bot has a quest the player does not have and Questie is not installed, expect Other / Unknown rather than an invented zone.
+7. If Questie is installed and compatible, bot-only quests may receive the Questie zone/category; disabling Questie must not cause a Lua error.
+8. Search by quest name, ID, or category name and test All/In Progress/Complete filters.
+9. Re-test Abandon, Accept Nearby and Talk / Turn In once. Semantics should match 2.2.6 exactly.
+10. /reload with Lua errors enabled. Expect no errors; Summon Presets and all non-quest tabs remain unchanged.
