@@ -9,7 +9,13 @@ Control your companions, inspect their characters, manage equipment and quests, 
 **Development status:** Alpha — under active development.
 
 ---
+## Download
 
+**[Download the latest ElvUI_Multibot release](https://github.com/malektha-pixel/ElvUI_Multibot/releases)**
+
+Download the installation ZIP from the release's **Assets** section and extract the addon folders into your WoW 3.3.5a `Interface/AddOns` directory.
+
+> **Note:** This project is in alpha development. Bugs and compatibility issues may occur.
 ## Overview
 
 AzerothCore Playerbots makes it possible to adventure alongside AI-controlled characters, from a small leveling party to a complete raid.
