@@ -59,7 +59,7 @@ Core is required by the other ElvUI_Multibot modules. It does not replace Azerot
 ### ElvUI_Multibot_UnitFrames
 
 **Keep track of your companions directly through ElvUI.**
-### Unit Frames
+
 ![ElvUI Multibot Unit Frames](ElvUI_Multibot_UnitFrames.png)
 Extends ElvUI's party/unit-frame experience with Playerbots-specific information and controls.
 
@@ -76,7 +76,7 @@ This module is designed to make everyday bot management convenient without requi
 ### ElvUI_Multibot_ContextMenu
 
 **Right-click control, wherever you need it.**
-### Context Menu
+
 ![ElvUI Multibot Context Menu](ElvUI_Multibot_ContextMenu.png)
 Adds contextual Playerbots menus to supported unit frames and game-world interactions.
 
@@ -95,7 +95,7 @@ The menu only exposes actions appropriate to its current context and available c
 ### ElvUI_Multibot_BotInspect
 
 **Character management for your entire bot roster.**
-### BotInspect
+
 ![ElvUI Multibot BotInspect](ElvUI_Multibot_BotInspect.png)
 A dedicated interface for examining and managing Playerbots.
 
@@ -117,7 +117,7 @@ Offline character views are read-only. Some actions depend on the bot being conn
 ### ElvUI_Multibot_CommandPanel
 
 **Tactical control for parties and large Playerbots raids.**
-### Command Panel
+
 ![ElvUI Multibot Command Panel](ElvUI_Multibot_CommandPanel.png)
 The Command Panel is intended for situations where controlling each bot individually becomes impractical.
 
@@ -141,7 +141,7 @@ Features and ongoing development areas include:
 ### Game client
 
 - World of Warcraft 3.3.5a (Wrath of the Lich King).
-- El.vUI 6.09
+- ElvUI 6.09
 - A server supporting the required AzerothCore Playerbots integration.
 
 ### Server
